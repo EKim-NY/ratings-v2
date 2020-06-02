@@ -1,0 +1,17 @@
+[
+    {
+        "email": "rainbow@email.com",
+        "password": "marbles"
+    },
+
+    {
+        "email": "tofu@tofu.com", 
+        "password": "healthy"
+    }, 
+
+    {
+        "email": "moviefreak@movies.com",
+        "password": "hollywood"
+    }
+
+]

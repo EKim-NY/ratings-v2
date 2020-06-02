@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} User Details{% endblock %}
+
+{% block body %} 
+{# values for user will be passed in 
+  from get_user_by_id function in server.py #}
+{# Check that the correct attributes are being called 
+  from the User class #}
+<h1>{{user.email}}</h1>
+
+<p>
+  {{ user.password }}
+</p>
+
+{% endblock %} 
+

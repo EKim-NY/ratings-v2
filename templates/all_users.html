@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}All Users{% endblock %}
+
+{% block %}
+ <h1>All Users</h1>
+
+{# users attributes are being passed in from users() in server.py #}
+  <ul>
+    {% for user in users %}
+      <li>
+        <a href="/users/{{ user.email }}">
+          {{ user.password }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
