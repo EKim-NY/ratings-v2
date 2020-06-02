@@ -49,19 +49,19 @@ def users():
     """Show a list of all users."""
     users = crud.get_users()
     
-    return render_template('all_users.html', users=users)
+    return render_template('all_users.html', all_users=users)
 
 
 
 # Check that dynamic template placeholder variable 
 # matches the arguments passed into the functions, methods below!
-@app.route('/users/<email>')  
-def get_user_by_id(email):
+@app.route('/users/<user_id>')  
+def get_user_by_id(user_id):
     """Get user info for user ID given."""
 
     # User info returned by get_user_by_id consists of
     # user_id, email, and password
-    user_info = crud.get_user_by_id(email)
+    user_info = crud.get_user_by_id(user_id)
 
     # Assign local var "user_info" to template placeholder var "user"
     # located in user_details.html file 

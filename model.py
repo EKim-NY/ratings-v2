@@ -16,7 +16,7 @@ class User(db.Model):
     user_id = db.Column(db.Integer,
                         autoincrement=True,
                         primary_key=True)
-    email = db.Column(db.String, unique=True)
+    email = db.Column(db.String)
     password = db.Column(db.String)
 
     def __repr__(self):
